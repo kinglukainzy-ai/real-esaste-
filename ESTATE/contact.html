@@ -5,6 +5,74 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Prodigal Real Estate — Contact</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .hours-section-wrapper {
+      margin-top: 48px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .hours-card {
+      background: var(--muted-surface);
+      border-radius: var(--radius);
+      padding: 32px;
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid rgba(255,255,255,0.03);
+      box-shadow: var(--card-shadow);
+    }
+    .hours-title {
+      margin: 0 0 8px;
+      font-size: 1.4rem;
+      color: var(--accent);
+      text-align: center;
+      font-weight: 700;
+    }
+    .hours-sub {
+      color: var(--muted-text);
+      text-align: center;
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+    .hours-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .hour-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1rem;
+    }
+    .separator {
+      flex-grow: 1;
+      border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
+      margin: 0 16px;
+      position: relative;
+      top: -4px;
+    }
+    .day {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .time {
+      font-weight: 500;
+      color: var(--text);
+      font-variant-numeric: tabular-nums; /* Keeps numbers aligned vertically */
+    }
+    .hour-row.weekend .time {
+      color: var(--muted-text);
+    }
+    .hour-row.closed .time {
+      color: var(--danger);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  </style>
 </head>
 <body>
   <div class="site">
@@ -63,7 +131,58 @@
           </div>
 
         </div>
-      </section>
+
+        <div class="hours-section-wrapper">
+          <div class="hours-card">
+            <h3 class="hours-title">Opening Hours</h3>
+            <p class="hours-sub">Visit our headquarters or call to schedule a viewing.</p>
+            
+            <div class="hours-list">
+              <div class="hour-row">
+                <span class="day">Monday</span>
+                <span class="separator"></span>
+                <span class="time">8:00 AM – 5:00 PM</span>
+              </div>
+
+              <div class="hour-row">
+                <span class="day">Tuesday</span>
+                <span class="separator"></span>
+                <span class="time">8:00 AM – 5:00 PM</span>
+              </div>
+
+              <div class="hour-row">
+                <span class="day">Wednesday</span>
+                <span class="separator"></span>
+                <span class="time">8:00 AM – 5:00 PM</span>
+              </div>
+
+              <div class="hour-row">
+                <span class="day">Thursday</span>
+                <span class="separator"></span>
+                <span class="time">8:00 AM – 5:00 PM</span>
+              </div>
+
+              <div class="hour-row">
+                <span class="day">Friday</span>
+                <span class="separator"></span>
+                <span class="time">8:00 AM – 5:00 PM</span>
+              </div>
+
+              <div class="hour-row weekend">
+                <span class="day">Saturday</span>
+                <span class="separator"></span>
+                <span class="time">10:00 AM – 2:00 PM</span>
+              </div>
+
+              <div class="hour-row closed">
+                <span class="day">Sunday</span>
+                <span class="separator"></span>
+                <span class="time">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
     </main>
 
     <footer class="container footer">
