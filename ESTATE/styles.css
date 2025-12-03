@@ -156,3 +156,90 @@ html,body{height:100%; margin:0; font-family:var(--font-sans); background:
   font-weight: 600;
   color: var(--accent);
 }
+/* --- Business Hours Section --- */
+
+.hours-section-wrapper {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.hours-card {
+  background: var(--muted-surface);
+  border-radius: var(--radius);
+  padding: 32px;
+  width: 100%;
+  max-width: 600px; /* Keeps it looking elegant, not too wide */
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: var(--card-shadow);
+}
+
+.hours-title {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: var(--accent); /* Uses your Gold color */
+  text-align: center;
+}
+
+.hours-sub {
+  color: var(--muted-text);
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hour-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+/* The dotted line between Day and Time */
+.separator {
+  flex-grow: 1;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+  margin: 0 12px;
+  position: relative;
+  top: -4px; /* Aligns dots with text middle */
+}
+
+.day {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.time {
+  font-weight: 500;
+  color: var(--text);
+  font-variant-numeric: tabular-nums; /* Aligns numbers vertically */
+}
+
+/* Style for Weekends/Saturdays */
+.hour-row.weekend .time {
+  color: var(--muted-text);
+}
+
+/* Style for Closed days */
+.hour-row.closed .time {
+  color: var(--danger); /* Uses your red color */
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: Highlight the current day */
+.hour-row.today .day,
+.hour-row.today .time {
+  color: var(--accent);
+}
+.hour-row.today .separator {
+  border-bottom-color: rgba(212, 168, 87, 0.3);
+}
+
