@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prodigal Real Estate — Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Compact hero for Services page */
+    .hero {
+      min-height: 260px;
+      margin: 12px 0 18px;
+    }
+    .hero-inner {
+      padding: 28px 20px; /* reduce top/bottom padding */
+      max-width: 760px;
+    }
+    .hero-title {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: var(--muted-text);
+    }
+
+    /* Services grid */
+    .services-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 16px;
+      padding: 16px;
+      border-radius: var(--radius);
+    }
+    .service-card {
+      background: var(--muted-surface);
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: left;
+      transition: transform 0.18s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+    .service-card .why-icon {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    /* CTA section */
+    .cta-section {
+      text-align: center;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site">
+
+    <!-- Header -->
+    <header class="site-header container">
+      <div class="site-brand">
+        <img src="home-bg.jpg" alt="Prodigal logo" class="brand-img">
+        <div>
+          <div class="site-title">Prodigal Real Estate</div>
+          <div class="site-sub">Premium properties, expert agents</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="listings.html">Listings</a>
+        <a class="nav-link active" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner container">
+          <h1 class="hero-title">Our Services</h1>
+          <p class="hero-sub">Professional real estate solutions tailored to your needs.</p>
+        </div>
+      </section>
+
+      <!-- SERVICES GRID -->
+      <section class="section container">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="why-icon">🏠</div>
+            <h4>Property Buying</h4>
+            <p>We help you find and secure premium properties across the country — safely, transparently, and at the right price.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="why-icon">💰</div>
+            <h4>Property Selling</h4>
+            <p>Our expert agents ensure your property gets maximum visibility, top valuations, and fast sale turnaround.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="why-icon">🛋️</div>
+            <h4>Renting & Leasing</h4>
+            <p>From apartments to commercial spaces, we connect tenants and landlords with verified and reliable listings.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="why-icon">📊</div>
+            <h4>Consultation & Valuation</h4>
+            <p>Get accurate property valuations and personalized advice backed by market data and experience.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="why-icon">🔧</div>
+            <h4>Property Management</h4>
+            <p>We handle tenant management, maintenance, inspections, and rent tracking for stress-free ownership.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="why-icon">📈</div>
+            <h4>Investment Guidance</h4>
+            <p>We analyze trends and opportunities to help you make profitable long-term real estate investments.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <h2>Need a Service?</h2>
+        <p>Contact our team today and let’s make your real estate dreams a reality.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="container footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="home-bg.jpg" alt="logo" class="footer-logo">
+          <div>Prodigal Real Estate</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="listings.html">Listings</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <div>hello@prodigal.example</div>
+          <div>&copy; 2025 Prodigal Real Estate</div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
